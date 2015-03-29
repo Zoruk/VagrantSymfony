@@ -16,8 +16,8 @@ echo -e "\n--- Mkay, installing now... ---\n"
 echo -e "\n--- Updating packages list ---\n"
 apt-get -qq update
  
-echo -e "\n--- Updating debian ---\n"
-apt-get -y dist-upgrade > /dev/null 2>&1
+#echo -e "\n--- Updating debian ---\n"
+#apt-get -y upgrade > /dev/null 2>&1
 
 echo -e "\n--- Install base packages ---\n"
 apt-get -y install vim htop curl build-essential python-software-properties git > /dev/null 2>&1

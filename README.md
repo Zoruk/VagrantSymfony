@@ -1,4 +1,4 @@
-# VagrentSymfony #
+# VagrantSymfony #
 This repository provide a basic *Vagrant* environment for *Symfony* development.
 
 ## Prerequisite ##

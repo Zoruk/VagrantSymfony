@@ -111,6 +111,16 @@ cat > /etc/apache2/sites-available/default <<EOF
 </VirtualHost>
 EOF
 
+echo -e "\n--- Configuring xdebug ---\n"
+
+cat >> /etc/php5/apache2/conf.d/20-xdebug.ini <<EOF
+xdebug.remote_enable=1
+xdebug.remote_handler=dbgp
+xdebug.remote_mode=req
+xdebug.remote_host=127.0.0.1
+xdebug.remote_port=9000
+EOF
+
 echo -e "\n--- Restarting Apache ---\n"
 service apache2 restart > /dev/null 2>&1
  
